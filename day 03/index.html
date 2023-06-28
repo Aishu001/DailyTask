@@ -1,9 +1,88 @@
 <!DOCTYPE html>
-
-<head> Summa </head>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
 <body>
-    <h1> HELLO EVERYONE</h1>
-</body>
+    <script>
+        //create a XML HTTP request using the object
+        let CreateReq =  new XMLHttpRequest();
 
+        // define (create a variable) the http method and the url
+
+        let method  = 'GET';
+
+        let url = 'https://restcountries.com/v3.1/all';
+
+        // Open the request using the  CreateReq (object)
+
+        CreateReq.open(method, url, true);
+
+        // set the onload function
+
+        CreateReq.onload = function()
+        {
+            if ( CreateReq.status === 200)
+            // status is the flag which is inside the XMLHttpRequest, 200 is the standard  (universall code or secret code)
+
+            //sent requst was successfull 
+            {
+                var getresponse = JSON.parse( CreateReq.responseText);
+
+                // get the response
+                console.log(getresponse);
+
+                // above all the codes are constants for call the api using basic of XMLHttprequest and how to implement in tha javascript  , these above all codes are have to memorize this.
+
+                // below all for applying our logics of code
+                // for find the all  countries flag (use loop concept)
+
+                for( i = 0 ; i < getresponse.length ; i ++) {
+
+                    // finding the flag
+
+                    console.log(getresponse[i].flag)
+
+                    // finding the name and the common name from inside the name
+
+                    console.log(getresponse[i].name.common)
+
+                    // finding the region
+
+                    console.log(getresponse[i].region)
+
+                    // finding the subregion
+
+                    console.log(getresponse[i].subregion)
+
+                    // finding the population
+
+                    console.log(getresponse[i].population)
+
+
+
+
+
+                }
+
+                
+
+            }
+        }
+
+        // sent the request
+
+        CreateReq.send();
+
+             
+        
+
+
+
+
+    </script>
+    
+</body>
 </html>
