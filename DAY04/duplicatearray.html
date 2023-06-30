@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // anonymous function 
+        let duplicate = function () {
+  let arr = [23, 56, 63, 11, 11, 56, 21, 23, 23, 45, 93, 12, 12, 56];
+  let arr1 = [];
+  len = arr.length;
+  
+  for (let i = 0; i < len; i++) {
+    if (arr1.indexOf(arr[i]) === -1) {
+      arr1.push(arr[i]);
+    }
+  }
+  
+  return arr1;
+}
+
+let result = duplicate();
+console.log(result);
+
+
+// iife function
+
+( function (Duplicate) {
+  let arr = [23, 56, 63, 11, 11, 56, 21, 23, 23, 45, 93, 12, 12, 56];
+  let arr1 = [];
+  len = arr.length;
+  
+  for (let i = 0; i < len; i++) {
+    if (arr1.indexOf(arr[i]) === -1) {
+      arr1.push(arr[i]);
+    }
+  }
+  return arr1;
+  })
+( console(Result = Duplicate()));
+
+//arrow function
+
+
+   let dupli  =() =>{
+  let arr = [23, 56, 63, 11, 11, 56, 21, 23, 23, 45, 93, 12, 12, 56];
+  let arr1 = [];
+  len = arr.length;
+  
+  for (let i = 0; i < len; i++) {
+    if (arr1.indexOf(arr[i]) === -1) {
+      arr1.push(arr[i]);
+    }
+  } 
+  return arr1;
+}
+
+let res = duplicate();
+console.log(res);
+
+
+
+
+
+    </script>
+</body>
+</html>

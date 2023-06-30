@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // arraw function
+       let  isPalindrome = (num) => {
+        const str = num.toString();
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+
+       }
+
+  //iife function
+
+function printPalindromes(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (isPalindrome(arr[i])) {
+      console.log(arr[i]);
+    }
+  }
+}
+
+const Numbers = [123, 121, 45654, 789, 87678, 234];
+isPalindrome(Numbers);
+
+
+( function IsPalindrome(num)  {
+        const str = num.toString();
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+
+       }
+
+  
+
+(function Printpalindromes(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (IsPalindrome(arr[i])) {
+      console.log(arr[i]);
+    }
+  }
+}))
+( numbers = [123, 121, 45654, 789, 87678, 234]
+(IsPalindrome(numbers)));
+
+//anonymous function
+
+let numbers = [123, 121, 45654, 789, 87678, 234];
+
+(function () {
+  for (let i = 0; i < numbers.length; i++) {
+    let num = numbers[i].toString();
+    let reversedNum = num.split('').reverse().join('');
+
+    if (num === reversedNum) {
+      console.log(numbers[i]);
+    }
+  }
+})();
+
+
+
+
+
+    </script>
+</body>
+</html>

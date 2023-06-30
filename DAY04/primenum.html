@@ -3,7 +3,67 @@
     <title>XMLHttpRequest Example</title>
   </head>
   <body>
-    <script src = "primenum.js">
+    <script>
+
+
+// ANONYMOUS FUNCTION
+
+let anonfunction = function () {
+
+let arr = [2,12,3,5,56,34,23,44,51,98,56];
+
+for( i = 0 ; i<arr.length ; i++ ) {
+
+    if(arr[i] % 2 === 1){
+
+        console.log(" odd number" , arr[i]);
+
+    }
+}
+
+}
+
+anonfunction();
+
+
+
+
+ let iife  = (function () {
+
+     let arr = [2,12,3,5,56,34,23,44,51,98,56];
+    
+     for( i = 0 ; i<arr.length ; i++ ) {
+    
+         if(arr[i] % 2 === 1){
+    
+             console.log(" odd number" , arr[i]);
+    
+         }
+     }
+    
+     }
+ )();
+
+
+
+ let arrowfunct = () => {
+
+     let arr = [2,12,3,5,56,34,23,44,51,98,56];
+
+ for( i = 0 ; i<arr.length ; i++ ) {
+
+     if(arr[i] % 2 === 1){
+
+         console.log(" odd number" , arr[i]);
+
+     }
+ }
+
+    
+
+ }
+
+
   
     </script>
   </body>

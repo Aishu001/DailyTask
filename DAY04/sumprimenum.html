@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p> </p>
+<script>
+   
+  // ANONYMOUS FUNCTION
+  
+   let AddPrime = function (acc , currentvalue) {
+
+    return acc + currentvalue ;
+
+
+   }
+
+   let AddArr = [23 ,34, 56,24, 78, 34,12];
+
+   let result = AddArr.reduce(AddPrime);
+
+   console.log(result);
+
+   // ARROW FUNCTION
+
+   let addarr = [83 ,58,90, 45, 65, 30];
+
+   let ReduceArrow = addarr.reduce((previousvalu, currentvalue) => previousvalu + currentvalue );
+
+   
+
+   console.log(ReduceArrow);
+
+//    IIFE
+
+let arrIIFE = [,58, 65, 30, 83 ,90, 45];
+
+(function IIFE (){
+
+    add = 0;
+
+for (i = 0; i < arrIIFE.length; i++);
+
+{
+    add += arrIIFE[i];
+}
+
+})();
+
+
+
+  
+
+
+
+
+
+
+   
+
+</script>
+    
+</body>
+</html>

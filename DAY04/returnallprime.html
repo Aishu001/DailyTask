@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// ANONYMOUS FUNCTION
+        let primenum = function() {
+    let arrANON = [2, 5, 3, 6, 7, 23, 56, 34, 67, 89, 19, 29, 36];
+    let resultArray = [];
+
+    for (let i in arrANON) {
+        if (arrANON[i] % 2 === 1) {
+            resultArray[resultArray.length] = arrANON[i];
+        }
+    }
+
+    return resultArray;
+};
+
+var arrformat = primenum();
+console.log(arrformat);
+
+
+
+// IIFE FUNCTION
+
+
+(function(Primenum) {
+    let arrIIFE = [2, 5, 3, 6, 7, 23, 56, 34, 67, 36];
+    let resultArraY = [];
+
+    for (let i in arrIIFE) {
+        if (arrIIFE[i] % 2 === 1) {
+            resultArraY[resultArraY.length] = arrIIFE[i];
+        }
+    }
+
+    return resultArraY;
+}
+
+
+
+// ARROW FUNCTION
+
+ ) (console.log(Arrformat = Primenum()));
+
+
+ let PrimeNum = () =>   {
+
+    let arrARR = [2, 5, 3, 6, 7, 23, 89, 19, 29, 36];
+    let resultArr = [];
+
+    for (let i in arrARR) {
+        if (arrARR[i] % 2 === 1) {
+            resultArr[resultArr.length] = arrARR[i];
+        }
+    }
+
+    return resultArr;
+}
+PrimeNum();
+
+
+
+
+    </script>
+    
+</body>
+</html>
