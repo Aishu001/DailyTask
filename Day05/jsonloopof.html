@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var json1 = '{"name": "Aishu", "value": "061111", "type": true}';
+var json2 = '{"name": "Aishwarya", "value": "11116", "type": false}';
+
+let convert = () => {
+  let obj1 = JSON.parse(json1);
+  let obj2 = JSON.parse(json2);
+
+  
+  for (let key1 of obj1) {
+    console.log(`obj1[${key1}]:`, obj1[key1]);
+  } 
+  for (let key2 in obj2) {
+    console.log(`obj2[${key2}]:`, obj2[key2]);
+  }
+}
+
+convert();
+    </script>
+</body>
+</html>

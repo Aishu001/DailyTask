@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var json1 = '{"name": "Aishu", "value": "061111", "type": true}';
+var json2 = '{"name": "Aishwarya", "value": "11116", "type": false}';
+
+let convert = () => {
+  let obj1 = JSON.parse(json1);
+  let obj2 = JSON.parse(json2);
+
+  // Assuming both objects have the same keys
+  let keys = Object.keys(obj1);
+  for (let i = 0; i < keys.length; i++) {
+    let key = keys[i];
+    console.log(obj1[key]);
+    console.log(obj2[key]);
+
+    // Perform your desired operations on the objects here
+  }
+}
+
+convert();
+________________________________________________________________
+
+var Json1 = '{"name": "Aishu", "value": "061111", "type": true}';
+var Json2 = '{"name": "Aishwarya", "value": "11116", "type": false}';
+
+let Convert = () => {
+  let obj1 = JSON.parse(Json1);
+  let obj2 = JSON.parse(Json2);
+
+  // Loop through the properties of obj1
+  for (let key1 in obj1) {
+    console.log(`obj1[${key1}]:`, obj1[key1]);
+  }
+
+  console.log('---'); // Separator for clarity
+
+  // Loop through the properties of obj2
+  for (let key2 in obj2) {
+    console.log(`obj2[${key2}]:`, obj2[key2]);
+  }
+}
+
+convert();
+
+
+
+    </script>
+</body>
+</html>
