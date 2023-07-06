@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+           class UberPrice {
+  constructor() {
+    this.BasePriceAuto = 40;
+    this.BasePriceBike = 18;
+    this.BasePriceCar = 60;
+  }
+}
+
+class VehicleCalculator extends UberPrice {
+  constructor(option, distance_km) {
+    super();
+    this.option = option;
+    this.distance_km = distance_km;
+  }
+
+  calculate() {
+    let basePrice = 0;
+
+    switch (this.option) {
+      case 1:
+        basePrice = this.BasePriceAuto;
+        break;
+      case 2:
+        basePrice = this.BasePriceBike;
+        break;
+      case 3:
+        basePrice = this.BasePriceCar;
+        break;
+      default:
+        console.log("Invalid option");
+        return;
+    }
+
+    const totalPrice = basePrice * this.distance_km;
+    console.log("Total Price: ", totalPrice);
+  }
+}
+
+const option = 1; // Choose the vehicle option (1 for Auto, 2 for Bike, 3 for Car)
+const distance = 10; // Distance in kilometers
+
+const display = new VehicleCalculator(option, distance);
+display.calculate();
+
+           
+           
+
+    </script>
+    
+</body>
+</html>
