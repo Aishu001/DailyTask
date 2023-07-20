@@ -1,0 +1,45 @@
+.form-group .required::after {
+    content:"*";color:red;
+  }
+  .checked{
+    line-height:32px;
+    font-size:4.25em;
+    color: blue;
+  }
+  /* /* .row{
+    display: block;
+  }*/
+  
+   .form-group{
+    padding: 100 px;
+    margin: 0;
+  }
+  /*.form-label{
+    display: inline;
+  } */ 
+
+  /* .btn-primary {
+    padding: 1px 1px;
+    font-size: 10px;
+    border-radius: 4px;
+    width: 10px;
+} */
+
+/* .btn-primary{
+  width: 10px;
+  height: 10px;
+} */
+.form-control{
+  width: auto;
+}
+.spl{
+  display: block;
+  padding: auto;
+}
+
+h1{
+  padding: 5px;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+}
