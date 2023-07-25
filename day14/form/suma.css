@@ -1,0 +1,21 @@
+.container{
+    padding: 30px;
+    align-items: center;
+    align-content: center;
+    box-sizing: 10px;
+    border: 50x;
+    margin: auto;
+    background-color: rgb(172, 211, 205);
+    border-radius: 10px;
+    box-shadow: 10px;
+    margin-top: 20px;
+}
+
+body{
+    background-color: rgb(172, 139, 201);
+
+}
+
+.dis{
+    display: inline-block;
+}
