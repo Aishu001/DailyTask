@@ -1,0 +1,70 @@
+/* .container{
+    align-content: center;
+    border: 5px;
+    background-color:#3177bc ;
+    box-sizing: border-box;
+} */
+.container{
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    background-color: rgb(115, 194, 228); 
+    padding-left: 50px;
+    padding-top: 50px;
+    /* margin-top: -3rem!important ;
+    padding:.8em;
+    width: auto;
+    height: fit-content;
+    max-width: none !important; */
+    /* margin-top: 200px;
+    margin-left: 200px; */
+    /* margin: 200px; */
+} 
+.timer-txt-box {
+   
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    height: auto;
+    line-height: 100px;
+    font-size: 5rem;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-color: azure ;
+  }
+  
+  /* #image {
+    /* The image used */
+    /* background-image: url("new-years-greetings-wishes-fireworks-feature.jpeg"); */
+  
+    /* Full height */
+    /* height: 100%; 
+    display: none;
+   */
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+  #image{
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+  #countdown{
+    align-content: center;
+    
+    padding: 10px;
+    background-color: rgb(63, 150, 220);
+    margin: 10px ;
+    border-radius: 10px;
+    color:white;
+
+  }

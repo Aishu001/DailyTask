@@ -1,0 +1,78 @@
+/* /* .body{
+    /* background-color: rgb(145, 210, 177);
+    gradient */
+    /* background-image: linear-gradient(rgb(142, 217, 215), rgb(120, 181, 202)); */
+    /* height: 100px;
+    width: 100px; */
+    /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("new-years-greetings-wishes-fireworks-feature.jpeg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* 
+.container{
+    border-radius: 10px;
+    box-shadow: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    background-color: beige; */
+    /* margin-top: -3rem!important ;
+    padding:.8em;
+    width: auto;
+    height: fit-content;
+    max-width: none !important; */
+    /* margin-top: 200px;
+    margin-left: 200px; */
+    /* margin: 200px; */
+/* } */
+
+/* #text {
+    /* font-size: 100px;
+    /* align-items: center; */
+    /* color: rgb(5, 5, 6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   */
+label{
+    font-size: 100px;
+    align-content: center;
+    color: rgb(135, 135, 200);
+    font-family: 'Segoe UI', Tahoma, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Verdana, sans-serif;
+    /* display: ; */
+    justify-content: space-around;
+
+}
+
+#countdown{
+    text-align:center;
+    /* text-size-adjust: 20px; */
+    font-size: 20px;
+    font-style: italic;
+    /* margin-top: 200px;
+    margin-left: 200px; */
+    padding: 10px;
+    margin: 20px;
+    color:hotpink;
+    background-color: rgb(228, 208, 196);
+    border-radius: 20px;
+    
+}
+
+#empty{
+    align-content: center;
+} 

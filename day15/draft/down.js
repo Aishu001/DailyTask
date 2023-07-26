@@ -48,27 +48,3 @@
 // }
 
 // Select the input element
-let countDown = document.getElementById("countdown");
-
-let counts = () => {
-  // Start counting from 10 to 0
-  let count = 10;
-
-  // Function to update the input's value with the current count
-  let updateCountdown = () => {
-    countDown.value = count;
-    count--;
-    if (count >= 0) {
-      setTimeout(updateCountdown, 1000);
-    } else {
-      // After the countdown reaches 0, display "Happy New Year"
-      alert("Happy New Year!");
-    }
-  };
-
-  // Start the countdown
-  setTimeout(updateCountdown, 1000);
-};
-
-// Call the counts function to begin the countdown
-counts();
