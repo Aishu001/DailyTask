@@ -1,0 +1,44 @@
+#cardsContainer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(200, 226, 218);
+    border: 5px solid black;
+    border-radius: 10px;
+   align-content: center;
+}
+
+#card{
+   
+    margin-top: 2px;
+    padding: 2px;
+    background-color: rgb(91, 228, 249);
+    border: 5px solid rgb(0, 157, 255);
+   
+}
+/* #cardbody{
+    text-align: center;
+    margin-top: 20px;
+    padding: 210px;
+    border-radius: 10px;
+    background-color: rgb(85, 131, 138);
+    border: 5px solid rgb(0, 157, 255);
+/* } */
+#namee{
+    font-size: large;
+    align-content: center;
+    margin-top: 0px;
+    padding: 9px;
+    background-color: rgb(255, 216, 250);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+      font-weight: bold;
+   
+} 
+
+
+#cptl,#regn,#ccode{
+    font-weight: bold;
+    font-size: large;
+
+}
+
