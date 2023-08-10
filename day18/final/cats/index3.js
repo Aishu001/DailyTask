@@ -2,7 +2,7 @@ const imageUrl1 = "https://api.catboys.com/img";
 const imageUrl2 = "https://api.thecatapi.com/v1/images/search";
 const quoteUrl = "https://api.seriesquotes.10cyrilc.me/quote/";
 
-//  I created the three variable named as imageure1, imageurl2, guoteurl
+//  I created the three variable named as , imageurl2
 
 // function created
 function fetchApis() {
