@@ -1,0 +1,49 @@
+#card{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid rgb(219, 234, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px;
+  }
+
+.cont{
+    margin-top:-5%;
+    display: inline-block;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    padding: 20px;
+    background-color:rgb(33,146,244);
+    border-radius: 10px;
+   
+}
+
+#price{
+    font-size:40px;
+}
+
+#head{
+    border-bottom: 2px solid rgb(196, 196, 196);
+    box-shadow: 10px;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+
+  }
+  
+  ul li:before {
+    content: '✓';
+    text-align: left;
+    padding: 3px;
+  }
+
+  #btn{
+    background-color: rgb(6, 147, 255);
+    color: aliceblue;
+    padding-top: 5px;
+    width: 200px;
+  }
