@@ -89,8 +89,8 @@ const ShoppingCart = () => {
         <br/>
         <br/>
         <br/>
-        <Card.Img variant="top" src="./src/assets/footer.png" id= "header"/>
-        <Card.Img variant="top" src="./src/assets/ffooter.png" id= "header"/>
+        <Card.Img variant="top" src="secondfooter.png" id= "header"/>
+        <Card.Img variant="top" src="ffooter.png" id= "header"/>
         
 
 

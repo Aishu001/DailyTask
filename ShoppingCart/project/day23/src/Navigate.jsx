@@ -37,7 +37,7 @@ function Navigate() {
       
     </Navbar>
   
-        <Card.Img variant="top" src="./src/assets/header.png" id= "header"/>
+        <Card.Img variant="top" src="header.png" id= "header"/>
 
     </div>
    
