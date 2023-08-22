@@ -5,7 +5,7 @@ const ProductData = [
       name: 'Panchathantiram',
       profession: 'Panchathantiram Tribute Poster',
       price: 'Rs. 169.00',
-      imageId: './src/assets/imag1.png',
+      imageId: './day23/src/assets/image4.png',
       cart: 0, // Set cart property here
     },
     {
