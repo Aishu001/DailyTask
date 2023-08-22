@@ -231,7 +231,7 @@ import React from 'react';
 import { MdShop } from 'react-icons/md';
 import DropDownMenu from './DropDownMenu';
 
-function Navigate({ cartCount }) {
+function Navigate({cartCount}) {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
 
   const toggleDropdown = () => {
@@ -249,7 +249,8 @@ function Navigate({ cartCount }) {
           </a>
           {isDropdownOpen && <DropDownMenu />}
         </li>
-        <MdShop className="material-icons-outlined" />
+        <i className="material-icons"></i><span>{cartCount}</span>
+        
       </ul>
     </nav>
   );

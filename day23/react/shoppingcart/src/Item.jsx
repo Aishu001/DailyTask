@@ -166,7 +166,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Item({ onCartChange, onValueChange, onTotalItemsChange }) {
+function Item({ onCartChange, onValueChange, onTotalItemsChange,data }) {
   const [cart, setCart] = React.useState(0);
   const [value, setValue] = React.useState(0); // Item value
 
@@ -193,10 +193,29 @@ function Item({ onCartChange, onValueChange, onTotalItemsChange }) {
   };
 
   return (
+
+    
     <Card style={{ width: '18rem' }}>
-      {/* ... */}
+      {
+        data.map((pro) => (
+          <>
+          <Card.Img variant="top" src={pro.imageId} />
+      <Card.Body>
+        <Card.Title>{pro.name}</Card.Title>
+        <Card.Text>
+          {pro.profession}
+        </Card.Text>
+        <Card.Text>
+          {pro.price}
+        </Card.Text>
+        
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+          </>
+        ))
+      }
       <Button variant="primary" onClick={handleIncrement}>+</Button>
-      <p>cart is {cart}</p>
+      <p>cart is {cart}</p> 
       <Button variant="primary" onClick={handleDecrement}>-</Button>
      
     </Card>

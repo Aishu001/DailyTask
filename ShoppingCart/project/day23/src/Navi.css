@@ -1,0 +1,33 @@
+#navigate {
+    position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%; /* Make the navbar width 100% of its container */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  
+  
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* #navbar-dark-example{
+    position: sticky;
+    top: 10px;
+    z-index:0;
+    margin-top: 100px ;
+  } */
+  #header {
+    height: 400px;
+    width: 100vw; /* Use viewport width */
+    position: relative;
+    top: 10px;
+    z-index: 0;
+  background-color: rgb(226, 211, 133);
+  }
+  
+  
+  
+  

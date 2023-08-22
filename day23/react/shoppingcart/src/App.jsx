@@ -190,6 +190,7 @@ function App() {
           onTotalItemsChange={handleTotalItemsChange}
         />
         {/* Add more Item components */}
+        
       </div>
      
     </div>
