@@ -1,0 +1,9 @@
+body {
+  margin: 1000px;
+  padding-bottom: 1000px;
+  padding-left: 600px;
+  padding-top: 100px;
+  justify-content: space-between;
+  background-image: linear-gradient(rgb(193, 255, 238),rgb(132, 200, 253));
+}
+

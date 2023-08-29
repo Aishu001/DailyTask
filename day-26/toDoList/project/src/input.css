@@ -1,0 +1,28 @@
+#form {
+    display: inline-flex  !important ;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Spread items evenly */
+    margin-top: 20px; /* Add some top margin */
+    background-color: rgb(69, 228, 175);
+    padding: 10px; /* Add padding for better visual appearance */
+    border : none !important;
+    outline:none!important;
+    /* padding-left: 400px; */
+}
+
+#filter-dropdown{
+    width:auto;  
+    height: auto ;
+    border : none !important;
+    outline:none!important;
+    box-shadow: none !important;
+    font-size: .9rem;
+    color:#ffffff;
+    align-items: flex-end;
+    float: right;
+    margin-right: 20px;
+}
+
+#dropdown{
+    padding-left: 100px;
+}
