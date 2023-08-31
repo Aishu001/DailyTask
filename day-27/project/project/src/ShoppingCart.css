@@ -1,0 +1,111 @@
+
+
+.tbody{
+  display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: flex-end; /* Align items to the right side horizontally */
+ 
+  align-content: space-between;
+
+  box-shadow: 14px 6px 5px 1px rgba(0,0,0,0.53);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ margin-top: 100px;
+ margin-block-end: 50px;
+  width: 1400px;
+  border-collapse: separate;
+  border-spacing: 10px; 
+
+
+
+}
+
+ td{
+
+    padding: 50px;
+    align-items: center;
+    align-content: space-between;
+    background-image: linear-gradient(rgb(204, 204, 204),white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width: 1400px;
+    padding-right: 20px;
+ 
+  }
+
+td:hover {background-image: linear-gradient(rgb(255, 255, 255),rgba(176, 176, 176, 0.757));;}
+
+  #img{
+    align-content: center;
+    width: 150px;
+    height: 150px;
+    size: center;
+    position: center;
+    padding-top: 30px;
+  }
+
+  Button{
+    width : 50px ;
+    height :  50px ;
+    background-color: rgb(40, 147, 254);
+    color: aliceblue;
+    border-radius: 5px;
+  }
+  #btn{
+    width : 100px ;
+    height :  50px ;
+  }
+  span{
+    border: 2px solid rgb(212, 212, 212);
+    padding: 10px;
+    border-radius: 4px;
+    margin: 2px;
+    font-size: medium;
+    font-weight: bold;
+
+  }
+
+  .istock{
+    color: rgb(34, 119, 91);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+  }
+
+  .ostock{
+    color: rgb(249, 60, 60);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+  }
+  .total {
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: flex-end; /* Align items to the right side horizontally */
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 1000px;
+    margin-top: 100px;
+    
+  }
+  
+  /* Style for the button */
+  .total button {
+    margin-top: 10px;
+    width : 200px ;
+    height :  50px ;
+    margin-bottom: 20px; 
+    margin-right: 20px; 
+    background-color: rgb(253, 226, 130);
+    font-weight: bolder;
+    color: black;/* Add spacing between the text and the button */
+  }
+  
+  p{
+        margin-bottom: 20px; 
+    margin-right: 20px; 
+  }
+  
+  /* If you have a button within the .total element */
+ 
