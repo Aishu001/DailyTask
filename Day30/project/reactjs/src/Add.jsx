@@ -107,7 +107,7 @@ function Add() {
     e.preventDefault();
   
     axios
-      .post('http://localhost:4000/existingApi', state)
+      .post('https://jsonplaceholder.typicode.com/users', state)
       .then((response) => {
         alert('Data added Successfully');
   

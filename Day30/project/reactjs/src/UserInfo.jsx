@@ -10,7 +10,7 @@ function UserInfo() {
     const [columns, setColumns] = useState([]);
     const [rows, setRows] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:4000/existingApi') //fetch the data using axios
+        axios.get('https://jsonplaceholder.typicode.com/users') //fetch the data using axios
         .then((response) => {
             //  console.log(response.data);                   test purphose
             //  console.log(Object.keys(response.data[0]));
@@ -18,10 +18,18 @@ function UserInfo() {
             setRows(response.data)
         })
     },[])
+    useEffect(() => {
+      axios.post(`http://localhost:4000/existingApi`) //fetch the data using axios
+      .then((response) => {
+            console.log(response.data);                   
+           
+          
+      })
+  },)
 
     const handleDelete = (id) => {
       axios
-        .delete(`http://localhost:4000/existingApi/${id}`)
+        .delete(`https://jsonplaceholder.typicode.com/users/${id}`)
         .then((response) => {
           // Use the correct argument name "previousRows" instead of "perviousRows"
           setRows((previousRows) => {

@@ -58,7 +58,7 @@ function Edit() {
   
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/existingApi/${id}`)
+    axios.get(`https://jsonplaceholder.typicode.com/users${id}`)
     .then((response) => {
         // Create a mapping of field names to their values
         const fieldMappings = {
