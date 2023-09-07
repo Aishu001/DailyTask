@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          var countriesDetails = JSON.parse(xhr.responseText);
+          // Make sure you've already retrieved the data and stored it in the 'countriesDetails' variable as shown in your XMLHttpRequest example.
+
+// a. Get all the countries from Asia continent/region using Filter function
+var asiaCountries = countriesDetails.filter(function(country) {
+  return country.region === 'Asia';
+});
+
+console.log("Countries in Asia:", asiaCountries);
+
+// b. Get all the countries with a population of less than 2 lakhs using Filter function
+var lowPopulationCountries = countriesDetails.filter(function(country) {
+  return country.population < 200000;
+});
+
+console.log("Countries with population less than 2 lakhs:", lowPopulationCountries);
+
+// c. Print the following details name, capital, flag using forEach function
+// c. Print the following details name, capital, flag using forEach function
+console.log("Details of countries:");
+countriesDetails.forEach(function(country) {
+  console.log("Name:", country.name.common);
+
+  // Check if the 'capital' array exists and has elements before accessing the first element
+  if (country.capital && country.capital.length > 0) {
+    console.log("Capital:", country.capital[0]);
+  } else {
+    console.log("Capital: N/A"); // Provide a default value if 'capital' is missing
+  }
+
+  console.log("Flag:", country.flags.png);
+});
+
+// d. Print the total population of countries using reduce function
+var totalPopulation = countriesDetails.reduce(function(acc, country) {
+  return acc + country.population;
+}, 0);
+
+console.log("Total population of countries:", totalPopulation);
+
+// e. Print the country which uses US Dollars as currency.
+var usDollarCountries = countriesDetails.filter(function(country) {
+  return country.currencies && country.currencies.USD;
+});
+
+console.log("Countries using US Dollars:", usDollarCountries);
+
+         
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
