@@ -1,7 +1,4 @@
 #root {
-
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -86,21 +83,22 @@ div{
   display: grid !important;
   grid-template-columns: repeat(2); /* Create three equal-width columns */
   gap: 10px;
- 
+ width: 30%;
   background-color: #abf4ff;
   padding: 100px;
   border-radius: 10px;
+  margin-left: 500px;
 }
 
 .name{
 
   display: inline-flex; /* Display elements next to each other */
   margin-right: 10px;
-  max-width: 100%;
+
   padding: 10px;
   border-radius: 10px;
   border: 2px solid black;
-  width: 100px;
+  width: 200px;
 }
 
 .email{
